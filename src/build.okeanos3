@@ -1,0 +1,9 @@
+#!/bin/bash -i
+module purge
+module load gcc/6.1.0
+module load cray-hdf5-parallel/1.10.0.3
+module load craype/2.5.13
+module load cray-mpich/7.6.3
+#gcc -v
+module list
+make -f Makefile.okeanos3
